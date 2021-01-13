@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pionworld</title>
+<link rel="stylesheet" href="../css/reset.css">
+<style type="text/css">
+		#wrapper{height:100%;background:url('../img/bg_login_2016_01.jpg') no-repeat 50% 0;}
+		.hdr_logo{width:476px;margin:0 auto;padding:118px 0 10px;}
+		.box_login{position:relative;width:476px;margin:0 auto;border:1px solid #f1f1f1;}
+		.box_login:before{display:block;position:relative;z-index:1;content:'';border-top:4px solid #ef2530;}/*가상 선택자로 라인 생성*/
+		.box_login:after{display:block;position:absolute;top:0;bottom:0;left:0;right:0;background:rgba(255,255,255,0.4);content:'';}
+		.box_login .scont{position:relative;z-index:1;padding:0 43px;}
+		
+		.box_login hgroup h2{margin-top:80px;text-align:right;}
+		.box_login hgroup h3{margin-top:20px;font-size:12px;color:#222;text-align:right;}
+		
+		.box_login .form_login{position:relative;z-index:1;}
+		.box_login .form_login input[type="text"],
+		.box_login .form_login input[type="password"] {display:block;box-sizing:border-box;width:100%;height:48px;margin-top:12px;padding:0 18px;border:1px solid #d9d9d9;background:#f9f9f9;font-weight:bold;}
+		.box_login .form_login input:focus {border:1px solid #ef2530;background:#faffbd;outline:none;}
+		.box_login .form_login fieldset {margin-top:56px;}
+		.box_login .form_login fieldset input:first-of-type{margin-top:0;}
+
+		.box_login .form_login .set_id_save{margin-top:12px;}
+		.box_login .form_login .set_id_save label{font-size:12px;color:#222;}
+		.box_login .form_login .set_id_save input[type="checkbox"]{vertical-align:-1px;}
+		.box_login .form_login .set_id_save input[type="checkbox"]:checked + label{font-weight:bold;}
+		.btn_login{box-sizing:border-box;width:100%;height:50px;margin-top:18px;background:#ff5000;font-size:16px;text-align:center;color:#fff;font-weight:bold;}
+		.box_reg{text-align:right;}
+		.box_reg .btn_reg{margin-top:18px;padding-right:26px;background:url('../img/ico_plus.png') no-repeat 100% 0;font-size:13px;line-height:18px;color:#f15b42;font-weight:bold;}
+		.box_reg .btn_reg:hover{text-decoration:underline;}
+		.ir {position:absolute;top:-9999px;left:-9999px;width:0;height:0;font-size:0;line-height:0;}
+		.box_login .copyright{margin-top:100px;padding-bottom:28px;font-style:normal;text-align:center;}
+</style>
+</head>
+<body>
+<div id="wrapper">
+	<header class="hdr_logo">
+		<h1><img src="/img/h1_logo.png" alt="pionnet"></h1>
+	</header>
+	<section class="box_login">
+		<div class="scont">
+			<hgroup>
+			<h2><img src="/img/h2_pion.png" alt="파이언넷월드"></h2>
+			<h3> 직원들의 이야기, 사내 인트라넷</h3>
+			</hgroup>
+			<div class="form_login">
+				<form>
+				<fieldset>
+					<legend class="ir">로그인</legend>
+					<input type="text" title="아이디" placeholder="아이디">
+					<input type="password" title="비밀번호" placeholder="비밀번호">
+				</fieldset>
+				<div class="set_id_save">
+					<input type="checkbox" id="idSave">
+					<label for="idSave">아이디 저장</label>
+				</div>
+				<div>
+					<button type="submit">로그인</button>
+				</div>
+			</form>
+			</div>
+			<div class="box_reg">
+				<button type="button" class="btn_reg">신입직원 등록</button>
+			</div>
+			<address>Copyright ⓒ All Rights Reserved</address>
+		</div>
+	</section>
+</div>
+</body>
+</html>
