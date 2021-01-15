@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        y =3.14; //에러안남
+        myFunction(); //에러발생 
+
+        function myFunction() {
+            //"use strict"; //지역 함수 선언(함수내에서는 잘 쓰지않음)
+           var x = 3.14; // use strict 쓰면 에러발생
+        }
+
+        //console.log('x : ',x);
+    </script>
+
+</body>
+</html>
